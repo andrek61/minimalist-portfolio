@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <meta name="description"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="#home" aria-label="Ke bagian atas">Andre<span>K</span></a>
+      <nav class="nav">
+        <a href="#home">About</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero" data-aos="fade-up">
+    <div class="container hero-grid">
+      <figure class="hero-card" aria-label="Foto profil">
+        <img src="image/Profile.jpg"
+             alt="My profil" loading="lazy" />
+      </figure>
+
+      <section class="hero-text">
+        <p class="eyebrow">Hi, I am</p>
+        <h1>Andre Kurniawan</h1>
+        <p class="lead">
+          but you can just call me Andre. 
+          I'm a software enthusiast who loves turning ideas into functional code. 
+          This is my digital workspace where I share my journey, skills, and the practical projects 
+          I’ve built—ranging from interactive web systems to mobile apps and IoT hardware. 
+          Grab a coffee, take a look around, and enjoy exploring my work!
+        </p>
+        <div class="cta">
+          <a href="#projects" class="btn btn-primary">See Project</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section id="skills" class="section alt" data-aos="fade-up">
+    <div class="container highlight">
+      <h2>Skills</h2>
+      <a href="skill.html" class="btn btn-ghost btn-skill">View all <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="chips">
+        <div class="card fade-delay">
+            <div class="wrapper">
+                <img src="image/BackG.jpg" class="cover-image">
+                <img src="image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="image/html.png" class="character">
+            <p class="title">HTML</p>
+        </div>
+        <div class="card fade-delay">
+            <div class="wrapper">
+                <img src="image/BackG.jpg" class="cover-image">
+                <img src="image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="image/css.png" class="character">
+            <p class="title">CSS</p>
+        </div>
+        <div class="card fade-delay">
+            <div class="wrapper">
+                <img src="image/BackG.jpg" class="cover-image">
+                <img src="image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="image/python.png" class="character">
+            <p class="title">Python</p>
+        </div>
+        <div class="card fade-delay">
+            <div class="wrapper">
+                <img src="image/BackG.jpg" class="cover-image">
+                <img src="image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="image/php.png" class="character">
+            <p class="title">php</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <a href="project.html" class="btn btn-ghost btn-view-project">View all <i class="fa-solid fa-arrow-right"></i></a>
+
+      <div class="projects">
+        <div class="p-card fade-delay-project">
+          <article class="project-card">
+            <img src="project_image/EPUB-reader.png" loading="lazy" />
+            <div class="project-body">
+              <h3>EPUB reeader </h3>
+              <p>
+                A smart EPUB reader built with Flask & SQLite. 
+                Highlighting a word and adding a note automatically underlines all 
+                matching instances across the book with interactive pop-ups.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Java Scipt</span>
+                <span>Python</span>
+                <span>SQLite</span>
+              </div>
+              <div class="actions">
+                <a href="https://github.com/andrek61/EPUB-reader" target="_blank" rel="noopener noreferrer" 
+                class="btn btn-primary btn-project">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="p-card fade-delay-project">
+          <article class="project-card">
+            <img src="project_image/Queue-Management.png" loading="lazy" />
+            <div class="project-body">
+              <h3>Hospital Queue Management </h3>
+              <p>
+                A web-based hospital queue management system built with Flask. 
+                Features a frictionless patient portal for registration, real-time doctor schedules, 
+                and a secure admin dashboard.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Java Scipt</span>
+                <span>Python</span>
+                <span>MySQL</span>
+              </div>
+              <div class="actions">
+                <a href="https://github.com/andrek61/Hospital-Queue-Management" target="_blank" rel="noopener noreferrer" 
+                class="btn btn-primary btn-project">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="p-card fade-delay-project">
+          <article class="project-card">
+            <img src="project_image/iot-app.png" loading="lazy" />
+            <div class="project-body">
+              <h3>Auto Light IoT </h3>
+              <p>
+                IoT mobile dashboard for automated lighting control. 
+                Integrates with Firebase Realtime Database and ESP microcontrollers 
+                for real-time LDR sensor monitoring, threshold configurations, 
+                and smart push notifications.
+              </p>
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Dart</span>
+              </div>
+              <div class="actions">
+                <a href="https://github.com/andrek61/IoT-app" target="_blank" rel="noopener noreferrer" 
+                class="btn btn-primary btn-project">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Designed & Built by andrek61 &copy; 2026</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
